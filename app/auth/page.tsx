@@ -16,7 +16,7 @@ const AuthContent = () => {
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
     const [justLoggedIn, setJustLoggedIn] = useState(false);
-    const router = useRouter();
+  const router = useRouter();
     const { login, logout, isLoggedIn } = useLogin();
 
     const handleSubmit = async (event: React.FormEvent) => {
@@ -45,7 +45,7 @@ const AuthContent = () => {
                 login({ fullName: data.user?.fullName || '', email: data.user?.email || email });
                 setJustLoggedIn(true);
                 setTimeout(() => router.push('/'), 1000); // Redirect after a short delay
-            } else {
+    } else {
                 setSuccess('You are successfully registered. Now login.');
                 setIsLogin(true);
                 setFullName('');
@@ -179,9 +179,9 @@ const AuthContent = () => {
 };
 
 const Auth = () => (
-    <LoginProvider>
-        <AuthContent />
-    </LoginProvider>
+  <LoginProvider>
+    <AuthContent />
+  </LoginProvider>
 );
 
 export default Auth;
