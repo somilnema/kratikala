@@ -12,6 +12,9 @@ const products = [
   {
     id: "1",
     name: "Sunset Waves",
+    title: "Sunset Waves",
+    description: "A beautiful sunset over the ocean.",
+    size: "24x36",
     category: "Landscape",
     price: 299,
     image: "/image1.jpg"
@@ -19,6 +22,9 @@ const products = [
   {
     id: "2",
     name: "Mountain View",
+    title: "Mountain View",
+    description: "A majestic view of a mountain range.",
+    size: "30x40",
     category: "Landscape",
     price: 349,
     image: "/image2.jpg"
@@ -26,6 +32,9 @@ const products = [
   {
     id: "3",
     name: "Forest Path",
+    title: "Forest Path",
+    description: "A serene path through a lush forest.",
+    size: "20x24",
     category: "Nature",
     price: 279,
     image: "/image.3.jpg"
@@ -33,6 +42,9 @@ const products = [
   {
     id: "4",
     name: "Ocean Breeze",
+    title: "Ocean Breeze",
+    description: "A calming view of the ocean at sunset.",
+    size: "24x30",
     category: "Seascape",
     price: 329,
     image: "/image4.jpg"
@@ -40,6 +52,9 @@ const products = [
   {
     id: "5",
     name: "City Lights",
+    title: "City Lights",
+    description: "A vibrant cityscape at night.",
+    size: "36x48",
     category: "Urban",
     price: 399,
     image: "/image5.jpg"
@@ -47,6 +62,9 @@ const products = [
   {
     id: "6",
     name: "Desert Dunes",
+    title: "Desert Dunes",
+    description: "A dramatic view of desert dunes under the moonlight.",
+    size: "24x36",
     category: "Landscape",
     price: 289,
     image: "/image6.jpg"
