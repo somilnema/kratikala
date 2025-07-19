@@ -1,7 +1,6 @@
-'use client'
-
-import React, { Suspense } from 'react'
 import dynamic from 'next/dynamic';
+
+export const dynamicMode = 'force-dynamic';
 
 const PaymentPage = dynamic(() => import('./PaymentClientPage'), { ssr: false });
 
