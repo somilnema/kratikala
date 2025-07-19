@@ -1,11 +1,13 @@
 "use client";
-import React from 'react';
+import React, { Suspense } from 'react';
 import Payment from '../components/Payment';
 
 export default function PaymentPage() {
   return (
     <div>
-      <Payment />
+      <Suspense fallback={<div>Loading payment...</div>}>
+        <Payment />
+      </Suspense>
     </div>
   );
 }
