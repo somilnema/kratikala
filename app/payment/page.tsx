@@ -1,7 +1,7 @@
-import dynamic from 'next/dynamic';
+'use client';
 
-export const dynamicMode = 'force-dynamic';
+import Payment from '../components/Payment';
 
-const PaymentPage = dynamic(() => import('./PaymentClientPage'), { ssr: false });
-
-export default PaymentPage;
+export default function PaymentPage() {
+  return <Payment />;
+}
